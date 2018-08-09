@@ -45,9 +45,9 @@ public class AlimentoCadastro extends HttpServlet{
         out.println("<form action='/WebExemplo02/alimentos/store' method='POST' onSubmit='validarFormulario()'>");
         out.println("<div id='div-campo-nome' class='form-group ml-md-4 mr-md-4 mt-md-4'>");
         out.println("<label for='campo-nome'>Nome<span class='text-danger font-weight-bold'>*</span></label>");
-        out.println("<input type='text' id='campo-nome' name='nome' class='form-control' required='required'>");
+        out.println("<input type='text' id='campo-nome' name='nome' class='form-control' required='required onfocus='validarCampoNome()>");
         out.println("</div>");
-        out.println("<div class='form-group ml-md-4 mr-md-4 mt-md-4'>");
+        out.println("<div id='campo-quantidade' class='form-group ml-md-4 mr-md-4 mt-md-4'>");
         out.println("<label for='campo-quantidade'>Quantidade<span class='text-danger font-weight-bold'>*</span></label>");
         out.println("<input type='text' id='campo-quantidade' name='quantidade' class='form-control' required='required'>");
         out.println("</div>");
